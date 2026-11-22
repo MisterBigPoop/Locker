@@ -12,6 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Extract project
+        run: unzip -o ZOV_LOCKER_GitHub_Actions.zip -d .
+
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
